@@ -35,8 +35,21 @@
     background-color: blue;
 
     &.blue {
-      background-color: skyblue;
-      border-color: skyblue;
+      background-color: blue;
+      border-color: blue;
+    }
+    &.red {
+      background-color: red;
+      border-color: red;
     }
   }
+}
+.blue {
+  background-color: blue;
+  border-color: blue;
+}
+
+.red {
+  background-color: red;
+  border-color: red;
 }
