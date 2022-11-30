@@ -14,3 +14,29 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.bin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+  .sq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 6px dashed white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &.blue {
+      background-color: skyblue;
+      border-color: skyblue;
+    }
+  }
+}
