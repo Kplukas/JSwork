@@ -22,7 +22,7 @@ function App() {
             <div className="App-header">
                     <div className="bin">
                     {
-                        sq?.map((sq) => <Sq key={sq.id} sq={sq} className="sq {sq.bg}" style={{backgroundColor: '{sq.bg}'}}/>)
+                        sq?.map((sq) => <Sq key={sq.id} sq={sq} className="{sq.bg}" style={{backgroundColor: '{sq.bg}'}}/>)
                     }
                 </div>
                 <div>
