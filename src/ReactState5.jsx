@@ -13,22 +13,21 @@ function App() {
     const addRed = () => {
         setSq(s => [...s, { id: randNum(100000, 999999), bg: 'red'}]);
     }
-    const reset = () => {
-        const nulis = 0;
-        setSq(nulis);
+    const clear = () => {
+        setSq([]);
     }
     return (
         <div className="App">
             <div className="App-header">
                     <div className="bin">
                     {
-                        sq?.map((sq) => <Sq key={sq.id} sq={sq} className="{sq.bg}" style={{backgroundColor: '{sq.bg}'}}/>)
+                        sq.map((sq) => <Sq key={sq.id} bg={sq.bg}/>)
                     }
                 </div>
                 <div>
                     <button onClick={addBlue}>ADD Blue</button>
                     <button onClick={addRed}>ADD Red</button>
-                    <button onClick={reset}>RESET</button>
+                    <button onClick={clear}>RESET</button>
                 </div>
             </div>
 
