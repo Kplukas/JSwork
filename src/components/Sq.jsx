@@ -4,9 +4,12 @@ function Sq() {
         <div style={{
             width: '100px',
             height: '100px',
-            display: 'flex',
+            display: 'inline-block',
+            flexWrap: 'wrap',
             justifyContent: 'center',
-            alignContent: 'center'
+            alignContent: 'center',
+            margin: '5px',
+            backgroundColor: 'burlywood'
         }}>
         </div>
     )
