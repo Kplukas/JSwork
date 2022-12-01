@@ -1,5 +1,6 @@
 import './App.scss';
-
+import Dog from './components/Dog';
+import randNum from './functions/randNum'
 
 function App() {
 
@@ -8,8 +9,10 @@ function App() {
     return (
         <div className="App">
             <div className="App-header">
-                {dogs.map((dog, i) => 
-                    <div className='cage' key={i}>{dog}</div>
+                {dogs.map((dog) => 
+                    <div>
+                    <Dog key={randNum(100000, 90000)} dog={dog}/>
+                    </div>
                 )}   
             </div>
         </div>
