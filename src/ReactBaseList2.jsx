@@ -5,13 +5,14 @@ import randNum from './functions/randNum'
 function App() {
 
     const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
+    let key = randNum(10, 100000);
 
     return (
         <div className="App">
             <div className="App-header">
-                {dogs.map((dog) => 
+                {dogs.map(dog => 
                     <div>
-                    <Dog key={randNum(100000, 90000)} dog={dog}/>
+                        <Dog key={key} dog={dog}/>
                     </div>
                 )}   
             </div>
